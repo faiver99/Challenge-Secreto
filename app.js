@@ -13,26 +13,24 @@ function asignarTextoElemento(elemento, texto) {
 function agregarAmigo(){
     nuevoAmigo = document.getElementById('amigo').value;
     console.log(nuevoAmigo);
-
     if ( nuevoAmigo !== ""){
-        if (nuevoAmigo.in(listaDeAmigos)){
-            return asignarTextoElemento("#resultado", " 🚫 Este nombre ya esta en la lista, ingrese uno nuevo")
-          
+        if (listaDeAmigos.includes(nuevoAmigo)){
+            asignarTextoElemento("#resultado", " 🚫 Este nombre ya esta en la lista, ingrese uno nuevo")
+            setTimeout(() =>{ 
+                asignarTextoElemento("#resultado", "");
+            }, 2000);
+        }else{
+            listaDeAmigos.push(nuevoAmigo);
+            asignarTextoElemento("#listaAmigos", `${listaDeAmigos}`);
+            console.log(listaDeAmigos);
+        }
+        
     } else {
-    
         asignarTextoElemento("#resultado", "❌ Ingrese un nombre primero");
         setTimeout(() =>{ 
             asignarTextoElemento("#resultado", "");
         }, 2000);
     }
-    // if (nuevoAmigo === "" || isNaN(nuevoAmigo)){
-        
-        
-    //     c
-       
+    
     
 }
-
-        listaDeAmigos.push(nuevoAmigo);
-        asignarTextoElemento("#listaAmigos", `${listaDeAmigos}`);
-        console.log(listaDeAmigos);
