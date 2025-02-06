@@ -37,8 +37,16 @@ function agregarAmigo(){
 }
 
 function sortearAmigo() {
-    let indiceAleatorio = Math.floor(Math.random() * listaDeAmigos.length);
+    if ( listaDeAmigos.length !== 0){
+        let indiceAleatorio = Math.floor(Math.random() * listaDeAmigos.length);
     let elementoAleatorio = listaDeAmigos[indiceAleatorio];
     asignarTextoElemento("#resultado",`Tu amigo(a) secreto es ${elementoAleatorio}`);
+    } else {
+        asignarTextoElemento("#resultado", "!🥶ingrese los nombres de sus amigos primero!");
+        setTimeout (() => {
+            asignarTextoElemento("#resultado", "");
+        }, 3000)
+    }
+    
 }
 
