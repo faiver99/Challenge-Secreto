@@ -44,3 +44,5 @@ El código está compuesto por las siguientes secciones principales:
 - <u>Se utilizan temporizadores (`setTimeout`) para mostrar mensajes de error o información al usuario durante un período determinado, mejorando la experiencia del usuario.</u>
 - <u>La función `asignarTextoElemento` centraliza la lógica de actualización del DOM, facilitando el mantenimiento y la legibilidad del código.</u>
 
+
+Eres libre de dejar comentarios.
