@@ -2,7 +2,7 @@
 
 Este proyecto es una aplicación interactiva para organizar un sorteo de "Amigo Secreto". Permite a los usuarios agregar nombres de amigos a una lista y, posteriormente, sortear aleatoriamente un nombre de la lista para asignar un "Amigo Secreto" a cada participante.
 
-## Estructura del Código
+## Estructura del Código.
 
 El código está compuesto por las siguientes secciones principales:
 
